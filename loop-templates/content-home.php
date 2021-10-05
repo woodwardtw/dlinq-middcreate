@@ -13,7 +13,10 @@ defined( 'ABSPATH' ) || exit;
 
 	<header class="entry-header">
 
-		<?php the_title( '<h1 class="entry-title">home', '</h1>' ); ?>
+		 <div class="title-block">
+		    <div class="midd">MI</br>DD</div>
+		    <div class="create">Create</div>
+		  </div>
 
 	</header><!-- .entry-header -->
 
