@@ -18,8 +18,9 @@ function middcreate_homepage_blocks(){
             // Load sub field value.
             $title = get_sub_field('block_title');
             $content = get_sub_field('block_content');
+            $row_id = sanitize_title($title);
             // Do something...
-            echo "<div class='row what border-bottom'>
+            echo "<div class='row home-row' id='{$row_id}'>
                     <div class='block flex-2'>
                         <h1 class='main-label'>{$title}</h1>
                     </div>
