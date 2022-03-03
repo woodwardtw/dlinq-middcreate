@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 
 
 	<div class="entry-content">
-
+		<?php middcreate_homepage_blocks();?>
 		<?php the_content(); ?>
 
 		<?php
