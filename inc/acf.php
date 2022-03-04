@@ -25,7 +25,9 @@ function middcreate_homepage_blocks(){
                         <h1 class='main-label'>{$title}</h1>
                     </div>
                     <div class='block flex-3'>
-                        {$content}
+                        <div class='home-description'>
+                            {$content}
+                        </div>
                     </div>   
                     </div>";
 

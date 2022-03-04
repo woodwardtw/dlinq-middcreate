@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5 {
 	align-items: center;
 	justify-content: center;
 	display: block;
+	z-index: 100;
 }
 
 
@@ -136,6 +137,13 @@ body .txt-rotate > .wrap {
   border: #23b39c;
 }
 
+.home-row {
+	padding: 70px 4vw;
+}
+
+.home-description {
+	padding: 0 40px;
+}
 
 #classic #verb {
   background-color: #0d395f;
@@ -188,7 +196,7 @@ body .txt-rotate > .wrap {
 
 
 .main-label {
-  font-size: 4vw;
+  font-size: 3.3vw;
   text-align: right;
   margin: 0 50px 0 0;
   /*background: repeating-linear-gradient(
