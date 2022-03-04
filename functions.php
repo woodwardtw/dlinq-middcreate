@@ -61,7 +61,7 @@ function middcreate_creations($category){
 		$id = get_the_ID();
 		$title = get_the_title();
 		$link = get_permalink();
-		$thumb = get_the_post_thumbnail($id, 'medium');
+		$thumb = get_the_post_thumbnail($id, 'example', array('class'=>'example-img'));
 		echo "
 		<a href='{$link}'>
 			<div class='example'>		
@@ -77,3 +77,5 @@ function middcreate_creations($category){
 	wp_reset_postdata();
 
 }
+
+add_image_size( 'example', 500, 500, true );

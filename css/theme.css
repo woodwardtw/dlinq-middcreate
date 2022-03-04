@@ -15203,6 +15203,14 @@ body .txt-rotate > .wrap {
   color: #fff;
 }
 
+.example {
+  margin-top: 40px;
+}
+
+.example-img {
+  aspect-ratio: 1/1;
+}
+
 /*FOOTER*/
 .footer {
   position: fixed;
