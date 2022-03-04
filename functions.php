@@ -58,12 +58,14 @@ function middcreate_creations($category){
 	if ( $the_query->have_posts() ) :
 	while ( $the_query->have_posts() ) : $the_query->the_post();
 		// Do Stuff
+		$id = get_the_ID();
 		$title = get_the_title();
 		$link = get_permalink();
-		$thumb = '';
+		$thumb = get_the_post_thumbnail($id, 'medium');
 		echo "
 		<a href='{$link}'>
 			<div class='example'>		
+				{$thumb}
 				<h3>{$title}</h3>	
 			</div>
 		</a>
