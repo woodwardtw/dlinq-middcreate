@@ -15193,6 +15193,16 @@ body .txt-rotate > .wrap {
   box-shadow: 4px 4px #23b39c;
 }
 
+.goals {
+  background-color: #212529;
+  padding: 50px 0;
+}
+
+.goal {
+  text-align: center;
+  color: #fff;
+}
+
 /*FOOTER*/
 .footer {
   position: fixed;

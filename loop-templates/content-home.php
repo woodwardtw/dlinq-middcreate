@@ -23,6 +23,26 @@ defined( 'ABSPATH' ) || exit;
 
 	<div class="entry-content">
 		<?php middcreate_homepage_blocks();?>
+		<div class="row goals">
+			<div class="col-md-4 goal">
+				<h2>Portfolios</h2>
+				<div class="description">
+					Show people who you are.
+				</div>
+			</div>
+			<div class="col-md-4 goal">
+				<h2>Projects</h2>
+				<div class="description">
+					Make something special.
+				</div>
+			</div>
+			<div class="col-md-4 goal">
+				<h2>Courses</h2>
+				<div class="description">
+					Create a different kind of course.
+				</div>
+			</div>
+		</div>
 		<?php the_content(); ?>
 
 		<?php

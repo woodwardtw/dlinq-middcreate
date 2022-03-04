@@ -183,3 +183,64 @@ function create_course_taxonomies()
   ));
 }
 
+// Register Custom Post Type people
+// Post Type Key: Example
+function create_example_cpt() {
+$labels = array(
+    'name' => __( 'Example', 'Post Type General Name', 'textdomain' ),
+    'singular_name' => __( 'Example', 'Post Type Singular Name', 'textdomain' ),
+    'menu_name' => __( 'Example', 'textdomain' ),
+    'name_admin_bar' => __( 'Example', 'textdomain' ),
+    'archives' => __( 'Example Archives', 'textdomain' ),
+    'attributes' => __( 'Example Attributes', 'textdomain' ),
+    'parent_item_colon' => __( 'Example:', 'textdomain' ),
+    'all_items' => __( 'All Examples', 'textdomain' ),
+    'add_new_item' => __( 'Add New Example', 'textdomain' ),
+    'add_new' => __( 'Add New', 'textdomain' ),
+    'new_item' => __( 'New Example', 'textdomain' ),
+    'edit_item' => __( 'Edit Example', 'textdomain' ),
+    'update_item' => __( 'Update Example', 'textdomain' ),
+    'view_item' => __( 'View Example', 'textdomain' ),
+    'view_items' => __( 'View Examples', 'textdomain' ),
+    'search_items' => __( 'Search Examples', 'textdomain' ),
+    'not_found' => __( 'Not found', 'textdomain' ),
+    'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
+    'featured_image' => __( 'Featured Image', 'textdomain' ),
+    'set_featured_image' => __( 'Set featured image', 'textdomain' ),
+    'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
+    'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
+    'insert_into_item' => __( 'Insert into Example', 'textdomain' ),
+    'uploaded_to_this_item' => __( 'Uploaded to this Example', 'textdomain' ),
+    'items_list' => __( 'People list', 'textdomain' ),
+    'items_list_navigation' => __( 'Example list navigation', 'textdomain' ),
+    'filter_items_list' => __( 'Filter Example list', 'textdomain' ),
+  );
+  $args = array(
+    'label' => __( 'Example', 'textdomain' ),
+    'description' => __( '', 'textdomain' ),
+    'labels' => $labels,
+    'menu_icon' => '',
+    'supports' => array('title', 'editor', 'revisions', 'author', 'trackbacks', 'custom-fields', 'thumbnail',),
+    'taxonomies' => array('category', 'post_tag'),
+    'public' => true,
+    'show_ui' => true,
+    'show_in_menu' => true,
+    'menu_position' => 5,
+    'show_in_admin_bar' => true,
+    'show_in_nav_menus' => true,
+    'can_export' => true,
+    'has_archive' => true,
+    'hierarchical' => false,
+    'exclude_from_search' => false,
+    'show_in_rest' => true,
+    'publicly_queryable' => true,
+    'capability_type' => 'post',
+    'menu_icon' => 'dashicons-admin-users',
+  );
+  register_post_type( 'example', $args );
+  
+  // flush rewrite rules because we changed the permalink structure
+  global $wp_rewrite;
+  $wp_rewrite->flush_rules();
+}
+add_action( 'init', 'create_Example_cpt', 0 );
