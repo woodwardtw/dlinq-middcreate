@@ -23,24 +23,27 @@ defined( 'ABSPATH' ) || exit;
 
 	<div class="entry-content">
 		<?php middcreate_homepage_blocks();?>
-		<div class="row goals">
+		<div class="row goals" id="goal-row">
 			<div class="col-md-4 goal">
 				<h2>Portfolios</h2>
 				<div class="description">
 					Show people who you are.
 				</div>
+				<?php middcreate_creations('portfolio');?>
 			</div>
 			<div class="col-md-4 goal">
 				<h2>Projects</h2>
 				<div class="description">
 					Make something special.
 				</div>
+				<?php middcreate_creations('project');?>	
 			</div>
 			<div class="col-md-4 goal">
 				<h2>Courses</h2>
 				<div class="description">
 					Create a different kind of course.
 				</div>
+				<?php middcreate_creations('course');?>
 			</div>
 		</div>
 		<?php the_content(); ?>

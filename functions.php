@@ -44,3 +44,34 @@ if ( class_exists( 'Jetpack' ) ) {
 foreach ( $understrap_includes as $file ) {
 	require_once get_theme_file_path( $understrap_inc_dir . $file );
 }
+
+
+function middcreate_creations($category){
+	$args = array(
+		'category_name' => $category,
+		'post_type' => 'example',
+		'post_status' => 'publish'
+	);
+	$the_query = new WP_Query( $args );
+
+	// The Loop
+	if ( $the_query->have_posts() ) :
+	while ( $the_query->have_posts() ) : $the_query->the_post();
+		// Do Stuff
+		$title = get_the_title();
+		$link = get_permalink();
+		$thumb = '';
+		echo "
+		<a href='{$link}'>
+			<div class='example'>		
+				<h3>{$title}</h3>	
+			</div>
+		</a>
+		";
+	endwhile;
+	endif;
+
+	// Reset Post Data
+	wp_reset_postdata();
+
+}
