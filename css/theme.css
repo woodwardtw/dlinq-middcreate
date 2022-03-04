@@ -15211,6 +15211,11 @@ body .txt-rotate > .wrap {
   aspect-ratio: 1/1;
 }
 
+a .example h3 {
+  color: #fff;
+  padding-top: 10px;
+}
+
 /*FOOTER*/
 .footer {
   position: fixed;

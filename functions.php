@@ -50,7 +50,8 @@ function middcreate_creations($category){
 	$args = array(
 		'category_name' => $category,
 		'post_type' => 'example',
-		'post_status' => 'publish'
+		'post_status' => 'publish',
+		'per_page' => 3,
 	);
 	$the_query = new WP_Query( $args );
 
