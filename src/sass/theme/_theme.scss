@@ -283,11 +283,35 @@ body .txt-rotate > .wrap {
 
 .example-img {
 	aspect-ratio: 1 / 1;
+	transition: all .3s ease;
+}
+
+.example-img:hover {
+	box-shadow: .5rem 0.5rem $aqua, -0.5rem -0.5rem $aqua;
 }
 
 a .example h3 {
 	color: #fff;
 	padding-top: 10px;
+}
+
+.home-btn {
+	background-color: #000;
+	width: 350px;
+	padding: 5px 10px;
+	display: block;
+	margin: 40px auto;
+	text-align: center;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: all .3s ease;
+}
+
+.home-btn:hover {
+	color: #fff;
+	box-shadow: .3rem 0.3rem $aqua, -0.3rem -0.3rem $aqua;
 }
 
 /*FOOTER*/
@@ -336,49 +360,49 @@ a .example h3 {
   transition: bottom .5s linear, right .3s linear;
 }
 
-.menu-item:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 1px;
-    right: 1px;
-    width: 100%;
-    display: block;
-    height: 100%;  
-    border: 1px solid #242a49;
-    background-color: #fff;
-    transition: border-color .2s linear;
-}
+// .menu-item:before {
+//     content: "";
+//     position: absolute;
+//     z-index: -1;
+//     bottom: 1px;
+//     right: 1px;
+//     width: 100%;
+//     display: block;
+//     height: 100%;  
+//     border: 1px solid #242a49;
+//     background-color: #fff;
+//     transition: border-color .2s linear;
+// }
 
-.menu-item:after {
-    content: "";
-    position: absolute;
-    bottom: 3px;
-    right: 3px;
-    width: 100%;
-    height: 100%;
-    border: 1px solid #242a49;
-    background-color: #fff;
-    transition: border-color .2s linear;
-    z-index: 0;
-}
+// .menu-item:after {
+//     content: "";
+//     position: absolute;
+//     bottom: 3px;
+//     right: 3px;
+//     width: 100%;
+//     height: 100%;
+//     border: 1px solid #242a49;
+//     background-color: #fff;
+//     transition: border-color .2s linear;
+//     z-index: 0;
+// }
 
-.menu-item a:hover {
-  padding-right:  2px;
-  padding-bottom: 2px;
-}
+// .menu-item a:hover {
+//   padding-right:  2px;
+//   padding-bottom: 2px;
+// }
 
-.menu-item:hover:before {
-  bottom:  2px;
-  right:  2px;
-}
+// .menu-item:hover:before {
+//   bottom:  2px;
+//   right:  2px;
+// }
 
-.menu-item:hover:after {
-  bottom:  5px;
-  right:  5px;
-  background-color: #efefef;
+// .menu-item:hover:after {
+//   bottom:  5px;
+//   right:  5px;
+//   background-color: #efefef;
 
-}
+// }
 
 #switch-theme {
   position: absolute;
