@@ -18,18 +18,21 @@ function middcreate_homepage_blocks(){
             // Load sub field value.
             $title = get_sub_field('block_title');
             $content = get_sub_field('block_content');
+            $span = get_sub_field('span');
             $row_id = sanitize_title($title);
             // Do something...
-            echo "<div class='row home-row' id='{$row_id}'>
-                    <div class='block flex-2'>
-                        <h1 class='main-label'>{$title}</h1>
-                    </div>
-                    <div class='block flex-3'>
-                        <div class='home-description'>
-                            {$content}
+            echo "
+                    <div class='col-md-{$span}' id='row-{$row_id}'>
+                        <div class='block flex-2'>
+                            <h1 class='main-label'>{$title}</h1>
                         </div>
-                    </div>   
-                    </div>";
+                        <div class='block flex-3'>
+                            <div class='home-description'>
+                                {$content}
+                            </div>
+                        </div>  
+                    </div> 
+                ";
 
         // End loop.
         endwhile;

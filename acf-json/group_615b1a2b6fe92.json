@@ -58,6 +58,27 @@
                     "toolbar": "full",
                     "media_upload": 1,
                     "delay": 0
+                },
+                {
+                    "key": "field_63497fcca88a6",
+                    "label": "Span",
+                    "name": "span",
+                    "type": "number",
+                    "instructions": "choose a number from 1 to 12",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "min": 1,
+                    "max": 12,
+                    "step": 1
                 }
             ]
         }
@@ -79,5 +100,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1633360558
+    "show_in_rest": 0,
+    "modified": 1665761265
 }

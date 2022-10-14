@@ -22,7 +22,10 @@ defined( 'ABSPATH' ) || exit;
 
 
 	<div class="entry-content">
-		<?php middcreate_homepage_blocks();?>
+		<div class="summary">MiddCreate gives you a place on the Internet where you have power, choice, and control!</div>
+		<div class="row">
+			<?php middcreate_homepage_blocks();?>
+		</div>
 		<div class="row goals" id="goal-row">
 			<div class="col-md-4 goal">
 				<h2>Portfolios</h2>
