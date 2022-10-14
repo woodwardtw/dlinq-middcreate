@@ -22,7 +22,10 @@ defined( 'ABSPATH' ) || exit;
 
 
 	<div class="entry-content">
-		<div class="summary">MiddCreate gives you a place on the Internet where you have power, choice, and control!</div>
+		<div class="summary">A place on the Internet where you have 
+				<div class="trifecta"><a href="#" class="emph">power</a>, <a href="#" class="emph">choice</a>, and <a href="#" class="emph">control</a>!
+				</div>
+			</div>
 		<div class="row">
 			<?php middcreate_homepage_blocks();?>
 		</div>
