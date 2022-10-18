@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<div class="entry-content">
 		<div class="summary">A place on the Internet where you have 
-				<div class="trifecta"><a href="#" class="emph">power</a>, <a href="#" class="emph">choice</a>, and <a href="#" class="emph">control</a>!
+				<div class="trifecta"><a href="#" class="emph">power</a>, <a href="#" class="emph">choice</a>, & <a href="#" class="emph">control</a>!
 				</div>
 			</div>
 		<div class="row">
