@@ -14985,6 +14985,24 @@ h1, h2, h3, h4, h5 {
   z-index: 100;
 }
 
+.halftone {
+  --dotSize: 0.25rem;
+  --stop1: 3%;
+  --stop2: 60%;
+  z-index: -1;
+}
+
+.halftone::after {
+  /* Cover our element */
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* Dotted background */
+  background-image: radial-gradient(circle at center, #1F9F8B var(--dotSize), transparent 0);
+  background-size: 1.3rem 1.3rem;
+  background-position: 0 0, 0.65rem 0.65rem;
+}
+
 .title-block {
   margin: 100px auto 100px auto;
   display: flex;
@@ -15021,7 +15039,7 @@ h1, h2, h3, h4, h5 {
   margin: 0;
   height: 100%;
   transition: transform 450ms ease-out, text-shadow 0.3s ease;
-  text-shadow: 4px 2px #23b39c, 6px 4px #97bbd5;
+  box-shadow: 4px 2px #23b39c, 6px 4px blue;
 }
 
 #classic .title-block .midd {
@@ -15311,6 +15329,13 @@ a .example h3 {
 
   .main-label {
     font-size: 5vw;
+  }
+}
+@media (prefers-reduced-motion) {
+  body {
+    -webkit-animation: none;
+    animation: none;
+    transition: none;
   }
 }
 
