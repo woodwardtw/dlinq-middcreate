@@ -17,31 +17,7 @@ if ( is_front_page() ) {
 	get_template_part( 'global-templates/hero' );
 }
 ?>
-<div class="do-block">
-  <div class="you-can"> You can <span
-     class="txt-rotate" id="verb"
-     data-period="2000"
-     data-rotate='[  "Make",
-    "Own",
-    "Customize",
-    "Expand",
-    "Love",
-    "show",
-    "shape",
-    "enjoy",
-    "elevate",
-    "prove",
-    "change",
-    "tweak",
-    "grow",
-    "curate",
-    "learn",
-    "do",
-    "compile",
-    "communicate",
-    "demonstrate",
-    "resist" ]'></span> <span class="period">I</span><span class="period">T</span>!</div>
-  </div>
+
 <div class="wrapper" id="full-width-page-wrapper">
 
 	<div class="container-fluid" id="modern">

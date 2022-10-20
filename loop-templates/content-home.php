@@ -22,10 +22,36 @@ defined( 'ABSPATH' ) || exit;
 
 
 	<div class="entry-content">
-		<div class="summary">A place on the Internet where you have 
+		<div class="do-block">
+		  <div class="you-can"> A place on the Internet where you can <span
+		     class="txt-rotate" id="verb"
+		     data-period="2000"
+		     data-rotate='["Make",
+		    "Own",
+		    "Customize",
+		    "Expand",
+		    "Love",
+		    "show",
+		    "shape",
+		    "enjoy",
+		    "elevate",
+		    "prove",
+		    "change",
+		    "tweak",
+		    "grow",
+		    "curate",
+		    "learn",
+		    "do",
+		    "compile",
+		    "communicate",
+		    "demonstrate",
+		    "resist" ]'></span> <span class="period">I</span><span class="period">T</span>!</div>
+		  </div>
+		</div>
+			<!-- <div class="summary">A place on the Internet where you have 
 				<div class="trifecta"><a href="#" class="emph">power</a>, <a href="#" class="emph">choice</a>, & <a href="#" class="emph">control</a>!
 				</div>
-			</div>
+			</div> -->
 		<div class="row">
 			<?php middcreate_homepage_blocks();?>
 		</div>
