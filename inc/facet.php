@@ -9,10 +9,10 @@
 defined( 'ABSPATH' ) || exit;
 
 while ( have_posts() ): the_post(); ?>
-    <div class="col-md-6">
+    <div class="col-md-4">
         <div class="card">
             <a href="<?php the_permalink(); ?>">
-                <?php echo resource_image();?>
+                <?php //echo resource_image();?>
             </a>
           <div class="card-body">
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>        
