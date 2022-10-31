@@ -9,10 +9,10 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<article <?php post_class('row'); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class('row'); ?> id="post-<?php the_ID(); ?>">	     
 
-	<header class="entry-header col-md-4">
-		<a href="">
+	<header class="entry-header col-md-4 home-logo">
+		<a href="<?php get_site_url();?>">
 			<img src="<?php echo get_template_directory_uri();?>/imgs/full-logo.svg" class="img-fluid" alt="Midd Create logo.">
 		</a>
 		  <div class="you-can"> A place on the Internet where you have <span

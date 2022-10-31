@@ -9,7 +9,7 @@
 defined( 'ABSPATH' ) || exit;
 
 while ( have_posts() ): the_post(); ?>
-    <div class="col-md-4">
+    <div class="col-md-4 card-holder">
             <div class="card position-relative">
                     <?php //echo resource_image();?>
               <div class="card-body">

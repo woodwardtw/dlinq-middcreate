@@ -15321,11 +15321,39 @@ a .example h3 {
   cursor: pointer;
 }
 
+.card-holder {
+  padding: 20px;
+}
+
 #examples .card {
   min-height: 400px;
   margin-bottom: 30px;
   border-radius: 0;
-  border: dashed #1F9F8B 1px;
+  border: dashed #1F9F8B 2px;
+  transition: all 0.7s ease;
+  position: relative;
+}
+
+#examples .card:after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: -30px;
+  bottom: 20px;
+  background-image: url(../imgs/scissors.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#examples .card:hover {
+  border: dashed #00f 2px;
+  transform: scale(1.02);
+  box-shadow: 6px 6px #1F9F8B;
+}
+
+.home-logo {
+  padding: 0 2vw;
 }
 
 @media only screen and (max-width: 600px) {
