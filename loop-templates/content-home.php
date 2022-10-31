@@ -27,6 +27,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="entry-content col-md-8">
 		<div class="facet-row col-md-12">
 			<?php echo facetwp_display( 'facet', 'tools' );?>
+			<?php echo facetwp_display( 'facet', 'goals' );?>
 		</div>
 		<div id="examples">			
 				<?php echo facetwp_display( 'template', 'examples' );?>

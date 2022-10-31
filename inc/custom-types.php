@@ -243,4 +243,78 @@ $labels = array(
   global $wp_rewrite;
   $wp_rewrite->flush_rules();
 }
-add_action( 'init', 'create_Example_cpt', 0 );
+add_action( 'init', 'create_example_cpt', 0 );
+
+add_action( 'init', 'create_role_taxonomies', 0 );
+function create_role_taxonomies()
+{
+  // Add new taxonomy, NOT hierarchical (like tags)
+  $labels = array(
+    'name' => _x( 'Roles', 'taxonomy general name' ),
+    'singular_name' => _x( 'role', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Roles' ),
+    'popular_items' => __( 'Popular Roles' ),
+    'all_items' => __( 'All Roles' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Roles' ),
+    'update_item' => __( 'Update role' ),
+    'add_new_item' => __( 'Add New role' ),
+    'new_item_name' => __( 'New role' ),
+    'add_or_remove_items' => __( 'Add or remove Roles' ),
+    'choose_from_most_used' => __( 'Choose from the most used Roles' ),
+    'menu_name' => __( 'Role' ),
+  );
+
+//registers taxonomy specific post types - default is just post
+  register_taxonomy('roles',array('example'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'role' ),
+    'show_in_rest'          => true,
+    'rest_base'             => 'role',
+    'rest_controller_class' => 'WP_REST_Terms_Controller',
+    'show_in_nav_menus' => true,    
+  ));
+}
+
+add_action( 'init', 'create_purpose_taxonomies', 0 );
+function create_purpose_taxonomies()
+{
+  // Add new taxonomy, NOT hierarchical (like tags)
+  $labels = array(
+    'name' => _x( 'Purposes', 'taxonomy general name' ),
+    'singular_name' => _x( 'purpose', 'taxonomy singular name' ),
+    'search_items' =>  __( 'Search Purposes' ),
+    'popular_items' => __( 'Popular Purposes' ),
+    'all_items' => __( 'All Purposes' ),
+    'parent_item' => null,
+    'parent_item_colon' => null,
+    'edit_item' => __( 'Edit Purposes' ),
+    'update_item' => __( 'Update purpose' ),
+    'add_new_item' => __( 'Add New purpose' ),
+    'new_item_name' => __( 'New purpose' ),
+    'add_or_remove_items' => __( 'Add or remove Purposes' ),
+    'choose_from_most_used' => __( 'Choose from the most used Purposes' ),
+    'menu_name' => __( 'Purpose' ),
+  );
+
+//registers taxonomy specific post types - default is just post
+  register_taxonomy('purposes',array('example'), array(
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'update_count_callback' => '_update_post_term_count',
+    'query_var' => true,
+    'rewrite' => array( 'slug' => 'purpose' ),
+    'show_in_rest'          => true,
+    'rest_base'             => 'purpose',
+    'rest_controller_class' => 'WP_REST_Terms_Controller',
+    'show_in_nav_menus' => true,    
+  ));
+}
+
+
