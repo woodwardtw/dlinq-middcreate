@@ -10,13 +10,11 @@ defined( 'ABSPATH' ) || exit;
 
 while ( have_posts() ): the_post(); ?>
     <div class="col-md-4">
-        <div class="card">
-            <a href="<?php the_permalink(); ?>">
-                <?php //echo resource_image();?>
-            </a>
-          <div class="card-body">
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>        
-          </div>
-        </div>
+            <div class="card position-relative">
+                    <?php //echo resource_image();?>
+              <div class="card-body">
+                <a href="<?php the_permalink(); ?>" class="stretched-link"><?php the_title(); ?></a>        
+              </div>
+            </div>
     </div>
 <?php endwhile;?> 

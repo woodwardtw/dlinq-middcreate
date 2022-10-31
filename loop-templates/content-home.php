@@ -14,19 +14,24 @@ defined( 'ABSPATH' ) || exit;
 	<header class="entry-header col-md-4">
 		<a href="">
 			<img src="<?php echo get_template_directory_uri();?>/imgs/full-logo.svg" class="img-fluid" alt="Midd Create logo.">
-		</a>		
+		</a>
+		  <div class="you-can"> A place on the Internet where you have <span
+		     class="txt-rotate" id="verb"
+		     data-period="2000"
+		     data-rotate='["control","choice","power"]'></span>.
+		 </div>
 
 	</header><!-- .entry-header -->
 
 
 	<div class="entry-content col-md-8">
-		<div class="do-block">
-		  <div class="you-can"> A place on the Internet where you have <span
-		     class="txt-rotate" id="verb"
-		     data-period="2000"
-		     data-rotate='["control","choice","power"]'></span>.</div>
-		  </div>
+		<div class="facet-row col-md-12">
+			<?php echo facetwp_display( 'facet', 'tools' );?>
 		</div>
+		<div id="examples">			
+				<?php echo facetwp_display( 'template', 'examples' );?>
+		</div>	
+	</div>
 			
 		<?php
 		wp_link_pages(

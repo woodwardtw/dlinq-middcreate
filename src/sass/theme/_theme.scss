@@ -141,13 +141,12 @@ h1, h2, h3, h4, h5 {
   // top: 0;
   width: 90%;
   background-color: #fff;
-  word-spacing: -10px;
   z-index: 100;
   margin: 0 auto;
 }
 
 .you-can {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: sans-serif;
   text-align: left;
 /*   font-size: 3em; */
   font-size: 1.7vw;
@@ -447,6 +446,13 @@ a .example h3 {
   color: #fff;
   padding:  10px 15px;
   cursor: pointer;
+}
+
+#examples .card {
+  min-height: 400px;
+  margin-bottom: 30px;
+  border-radius: 0;
+  border: dashed $aqua 1px ;
 }
 
 @media only screen and (max-width: 600px) {

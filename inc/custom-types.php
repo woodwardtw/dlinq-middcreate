@@ -133,7 +133,7 @@ function create_software_taxonomies()
   );
 
 //registers taxonomy specific post types - default is just post
-  register_taxonomy('Software',array('resource'), array(
+  register_taxonomy('Software',array('resource','example'), array(
     'hierarchical' => true,
     'labels' => $labels,
     'show_ui' => true,
