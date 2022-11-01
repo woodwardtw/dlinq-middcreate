@@ -14,14 +14,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper" id="single-wrapper">
 
-	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
+	<div class="container-fluid" id="content" tabindex="-1">
 
 		<div class="row">
 
-			<!-- Do the left sidebar check -->
-			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
+			<header class="entry-header col-md-4 home-left">
+				<a href="<?php echo get_site_url();?>">
+					<img src="<?php echo get_template_directory_uri();?>/imgs/full-logo.svg" class="img-fluid home-logo" alt="Midd Create logo.">
+				</a>
+				  <div class="you-can"> A place on the Internet where you have <span
+				     class="txt-rotate" id="verb"
+				     data-period="2000"
+				     data-rotate='["control","choice","power"]'></span>.
+				 </div>
 
-			<main class="site-main" id="main">
+			</header><!-- .entry-header -->
+
+			<main class="site-main col-md-8" id="main">
 
 				<?php
 				while ( have_posts() ) {
@@ -37,9 +46,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				?>
 
 			</main><!-- #main -->
-
-			<!-- Do the right sidebar check -->
-			<?php get_template_part( 'global-templates/right-sidebar-check' ); ?>
+			
 
 		</div><!-- .row -->
 

@@ -28,7 +28,7 @@ defined( 'ABSPATH' ) || exit;
 			<div class="row facet-row">
 				<div class="col-md-4">
 					<div class="home-facet">
-						<h2>People</h2>
+						<h2>Creators</h2>
 						<?php echo facetwp_display( 'facet', 'people' );?>
 					</div>
 				</div>
