@@ -475,12 +475,11 @@ a .example h3 {
 }
 
 #examples .card:hover {
-  border: dotted $aqua 2px;
   transform: scale(1.02);
   box-shadow: 6px 6px $aqua;
 }
 
-.home-logo{
+.home-left{
   padding: 0 2vw;
 }
 

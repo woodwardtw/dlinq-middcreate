@@ -11,7 +11,7 @@ defined( 'ABSPATH' ) || exit;
 
 <article <?php post_class('row'); ?> id="post-<?php the_ID(); ?>">	     
 
-	<header class="entry-header col-md-4 home-logo">
+	<header class="entry-header col-md-4 home-left">
 		<a href="<?php echo get_site_url();?>">
 			<img src="<?php echo get_template_directory_uri();?>/imgs/full-logo.svg" class="img-fluid home-logo" alt="Midd Create logo.">
 		</a>

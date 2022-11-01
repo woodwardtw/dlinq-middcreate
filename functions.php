@@ -79,4 +79,10 @@ function middcreate_creations($category){
 
 }
 
+function middcreate_resource_image(){
+	$id = get_the_ID();
+	$thumb = get_the_post_thumbnail($id, 'example', array('class'=>'example-img'));
+	return $thumb;
+}
+
 add_image_size( 'example', 500, 500, true );

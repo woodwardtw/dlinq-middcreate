@@ -15347,12 +15347,11 @@ a .example h3 {
 }
 
 #examples .card:hover {
-  border: dotted #1F9F8B 2px;
   transform: scale(1.02);
   box-shadow: 6px 6px #1F9F8B;
 }
 
-.home-logo {
+.home-left {
   padding: 0 2vw;
 }
 
