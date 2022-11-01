@@ -449,7 +449,7 @@ a .example h3 {
 }
 
 .card-holder {
-  padding: 20px;
+  padding: 30px;
 }
 
 #examples .card {
@@ -475,13 +475,25 @@ a .example h3 {
 }
 
 #examples .card:hover {
-  border: dashed $bright-blue 2px;
+  border: dotted $aqua 2px;
   transform: scale(1.02);
   box-shadow: 6px 6px $aqua;
 }
 
 .home-logo{
   padding: 0 2vw;
+}
+
+.home-facet h2 {
+  text-align: center;
+}
+
+.home-facet .facetwp-dropdown {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    border-radius: 0;
 }
 
 @media only screen and (max-width: 600px) {

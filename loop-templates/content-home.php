@@ -12,8 +12,8 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class('row'); ?> id="post-<?php the_ID(); ?>">	     
 
 	<header class="entry-header col-md-4 home-logo">
-		<a href="<?php get_site_url();?>">
-			<img src="<?php echo get_template_directory_uri();?>/imgs/full-logo.svg" class="img-fluid" alt="Midd Create logo.">
+		<a href="<?php echo get_site_url();?>">
+			<img src="<?php echo get_template_directory_uri();?>/imgs/full-logo.svg" class="img-fluid home-logo" alt="Midd Create logo.">
 		</a>
 		  <div class="you-can"> A place on the Internet where you have <span
 		     class="txt-rotate" id="verb"
@@ -24,13 +24,30 @@ defined( 'ABSPATH' ) || exit;
 	</header><!-- .entry-header -->
 
 
-	<div class="entry-content col-md-8">
-		<div class="facet-row col-md-12">
-			<?php echo facetwp_display( 'facet', 'tools' );?>
-			<?php echo facetwp_display( 'facet', 'goals' );?>
-		</div>
+		<div class="entry-content col-md-8">
+			<div class="row facet-row">
+				<div class="col-md-4">
+					<div class="home-facet">
+						<h2>People</h2>
+						<?php echo facetwp_display( 'facet', 'people' );?>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="home-facet">
+						<h2>Tools</h2>
+						<?php echo facetwp_display( 'facet', 'tools' );?>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="home-facet">
+						<h2>Goals</h2>
+						<?php echo facetwp_display( 'facet', 'goals' );?>
+					</div>
+				</div>
+			</div>		
+
 		<div id="examples">			
-				<?php echo facetwp_display( 'template', 'examples' );?>
+					<?php echo facetwp_display( 'template', 'examples' );?>
 		</div>	
 	</div>
 			
