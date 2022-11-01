@@ -20,6 +20,11 @@ defined( 'ABSPATH' ) || exit;
 		     data-period="2000"
 		     data-rotate='["control","choice","power"]'></span>.
 		 </div>
+		 <div class="info-block">
+		 	<p>MiddCreate gives the Middlebury College and MIIS community a place to build digital fluency, explore technologies, and create an online presence.</p>
+		 	<p>You can install WordPress, Omeka, Scalar, and other web-based apps with a few clicks or make your own content using HTML and javascript. MiddCreate makes creating content in a place you control easy and interesting.</p>
+		 	<a href="#" class="btn btn-primary">Sign Up!</a>
+		 </div>
 
 	</header><!-- .entry-header -->
 
@@ -28,19 +33,19 @@ defined( 'ABSPATH' ) || exit;
 			<div class="row facet-row">
 				<div class="col-md-4">
 					<div class="home-facet">
-						<h2>Creators</h2>
+						<h2>Made by</h2>
 						<?php echo facetwp_display( 'facet', 'people' );?>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="home-facet">
-						<h2>Tools</h2>
+						<h2>Made with</h2>
 						<?php echo facetwp_display( 'facet', 'tools' );?>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="home-facet">
-						<h2>Goals</h2>
+						<h2>Made for</h2>
 						<?php echo facetwp_display( 'facet', 'goals' );?>
 					</div>
 				</div>

@@ -458,7 +458,6 @@ a .example h3 {
 
 #examples .card {
   min-height: 400px;
-  margin-bottom: 30px;
   border-radius: 0;
   border: dashed $aqua 2px;
   transition: all .7s ease;
@@ -472,7 +471,7 @@ a .example h3 {
   height: 40px;
   position: absolute;
   left: -30px;
-  bottom: 20px;
+  bottom: 90px;
   background-image: url(../imgs/scissors.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -481,6 +480,10 @@ a .example h3 {
 #examples .card:hover {
   transform: scale(1.02);
   box-shadow: 6px 6px $aqua;
+}
+
+#examples a {
+  font-size: 1.5rem;
 }
 
 .home-left{
@@ -497,6 +500,11 @@ a .example h3 {
     margin: 0 auto;
     font-size: 1.3rem;
     border-radius: 0;
+}
+
+.info-block p{
+  font-size: 1.3rem;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 600px) {
