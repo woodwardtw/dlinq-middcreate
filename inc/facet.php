@@ -7,7 +7,6 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-
 while ( have_posts() ): the_post(); ?>
     <div class="col-md-4 card-holder">
             <div class="card position-relative">
