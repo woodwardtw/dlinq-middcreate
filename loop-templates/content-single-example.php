@@ -27,19 +27,7 @@ defined( 'ABSPATH' ) || exit;
 	<div class="entry-content">
 	<?php echo get_the_post_thumbnail( $post->ID, 'large', array('class'=>'alignleft') ); ?>
 		<h2>Description</h2>
-		<?php the_content(); ?>
-		<div class="row">
-			<div class="col-md-4">
-				<h3>Made by: <?php ?></h3>
-			</div>
-			<div class="col-md-4">
-				<h3>Made for:</h3>
-			</div>
-			<div class="col-md-4">			
-				<h3>Made with:</h3>
-			</div>
-		</div>
-
+		<?php the_content(); ?>		
 		<?php
 		wp_link_pages(
 			array(
