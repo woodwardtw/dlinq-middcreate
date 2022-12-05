@@ -5,8 +5,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: helvetica, sans-serif;
-  /*background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Ccircle cx='4.5' cy='4.5' r='4.5' fill='%2323b39c'/%3E%3C/svg%3E") repeat bottom right;*/
-  // background-image:  url(../imgs/dlinq_plus.svg);
   background-size: 20px 20px;
 }
 
@@ -465,17 +463,17 @@ a .example h3 {
 }
 
 
-#examples .card:after {
-  content: '';
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  left: -30px;
-  bottom: 90px;
-  background-image: url(../imgs/scissors.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+// #examples .card:after {
+//   content: '';
+//   width: 40px;
+//   height: 40px;
+//   position: absolute;
+//   left: -30px;
+//   bottom: 90px;
+//   background-image: url(../imgs/scissors.svg);
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
 
 #examples .card:hover {
   transform: scale(1.02);
