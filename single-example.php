@@ -22,15 +22,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<a href="<?php echo get_site_url();?>">
 					<img src="<?php echo get_template_directory_uri();?>/imgs/full-logo.svg" class="img-fluid home-logo" alt="Midd Create logo.">
 				</a>
-				  <div class="you-can"> A place on the Internet where you have <span
+				 <!--  <div class="you-can"> A place on the Internet where you have <span
 				     class="txt-rotate" id="verb"
 				     data-period="2000"
 				     data-rotate='["control","choice","power"]'></span>.
-				 </div>
+				 </div> -->
 
 			</header><!-- .entry-header -->
 
-			<main class="site-main col-md-8" id="main">
+			<main class="site-main col-md-12" id="main">
 
 				<?php
 				while ( have_posts() ) {
