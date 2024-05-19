@@ -13,7 +13,7 @@ defined( 'ABSPATH' ) || exit;
 
 	<header class="entry-header col-md-4 home-left">
 		<a href="<?php echo get_site_url();?>">
-			<img src="<?php echo get_template_directory_uri();?>/imgs/full-logo.svg" class="img-fluid home-logo" alt="Midd Create logo.">
+			<img src="<?php echo get_template_directory_uri();?>/imgs/full-logo.svg" class="img-fluid home-logo" alt="Midd Create logo that is just the words Midd Create with a bit of layering.">
 		</a>
 		  <div class="you-can"> A place on the Internet where you have <span
 		     class="txt-rotate" id="verb"
